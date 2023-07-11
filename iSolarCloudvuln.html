@@ -895,7 +895,7 @@
             accounts. Within the edit user dialog, customers can edit a user&rsquo;s details, including email address,
             time zone settings, and roles. There is also a disabled radio control for the user&rsquo;s level. By editing
             the website&rsquo;s HTML code to remove the disabled attribute on this radio control an attacker can
-            escalate any user&rsquo;s (including their own) from any privilege level to SuperAdministrator. No further plausibility checks
+            escalate a given users (or their own) privilege level to SuperAdministrator. No further plausibility checks
             are performed on the server side.</span></p>
     <p class="c1"><span class="c0"></span></p>
     <p class="c2">
@@ -976,14 +976,31 @@
     <p class="c1"><span class="c0"></span></p>
     <p class="c2"><span class="c0">This kind of privilege escalation works for all iSC regions. A malicious attacker
             doesn&rsquo;t need to own or access any Sungrow hardware, as new users can be registered at will. An
-            identical flaw was also found in the add-user dialog.</span></p>
+            identical flaw was also found in the add-user dialog, allowing an attacker to create Administrator-access
+            accounts with no prior system access.</span></p>
+    <p class="c2">
+        <a href="images_isc/7.png"
+            ><img
+            alt=""
+            src="images_isc/7.png"
+            style="
+                width: 400px;
+                height: auto;
+                margin-left: 0px;
+                margin-top: 0px;
+                transform: rotate(0rad) translateZ(0px);
+                -webkit-transform: rotate(0rad) translateZ(0px);
+            "
+            title=""
+        /></a>
+        </p>
     <h2 class="c11" id="h.wgj3ohytwruq"><span class="c4">Responsible disclosure</span></h2>
     <p class="c2"><span class="c0">Details of the vulnerabilities disclosed in this document were provided to Sungrow in
             April/May of 2023. These issues were fixed immediately afterwards and are no longer exploitable in the
             described way.</span></p>
     <p class="c1"><span class="c0"></span></p>
     <div>
-        <p class="c2"><span class="c0">Rev. 2</span></p>
+        <p class="c2"><span class="c0">Rev. 3</span></p>
     </div><br>
     <span class="c7"></span><a href="mailto: solarcyberseccontact@gmail.com">Email:
         solarcyberseccontact@gmail.com</a></span><br>
